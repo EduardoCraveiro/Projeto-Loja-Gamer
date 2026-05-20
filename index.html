@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Forge | Loja Gamer</title>
+  <meta name="description" content="Loja gamer com setups, periféricos, promoções e atendimento para jogadores exigentes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/estilo.css">
+  <script src="src/js/script.js" defer></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pixel Forge Home">
+      <span class="brand__mark">PF</span>
+      <span class="brand__text">Pixel Forge</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Menu principal">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="pages/portifolio.html" data-nav="portifolio">Portifólio</a>
+      <a href="pages/sobre.html" data-nav="sobre">Sobre</a>
+      <a href="pages/contato.html" data-nav="contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <p class="eyebrow">Loja Gamer</p>
+        <h1 id="hero-title">Upgrade completo para jogar com performance e estilo.</h1>
+        <p class="hero__text">A Pixel Forge reúne periféricos, combos e acessórios escolhidos para quem quer montar um setup competitivo sem perder tempo comparando dezenas de abas.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="pages/portifolio.html">Ver produtos</a>
+          <a class="button button--ghost" href="pages/contato.html">Pedir orçamento</a>
+        </div>
+      </div>
+
+      <div class="hero__media" aria-hidden="true">
+        <img src="src/assets/img/hero-setup.svg" alt="">
+      </div>
+    </section>
+
+    <section class="section section--compact" aria-labelledby="stats-title">
+      <div class="section__intro">
+        <p class="eyebrow">Atendimento gamer</p>
+        <h2 id="stats-title">Escolhas rápidas para diferentes estilos de jogo.</h2>
+      </div>
+      <div class="stats-grid">
+        <article class="stat">
+          <strong>24h</strong>
+          <span>resposta em pedidos online</span>
+        </article>
+        <article class="stat">
+          <strong>12x</strong>
+          <span>parcelamento em combos selecionados</span>
+        </article>
+        <article class="stat">
+          <strong>30+</strong>
+          <span>itens avaliados para setups</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-title">
+      <div class="section__intro">
+        <p class="eyebrow">Destaques</p>
+        <h2 id="featured-title">Produtos pensados para melhorar mira, som e resposta.</h2>
+      </div>
+      <div class="product-grid" data-products-preview></div>
+    </section>
+
+    <section class="section split-band" aria-labelledby="experience-title">
+      <div>
+        <p class="eyebrow">Experiência</p>
+        <h2 id="experience-title">Além de vender, a loja ajuda a montar o setup.</h2>
+      </div>
+      <p>A proposta da Pixel Forge é unir vitrine, promoções e orientação. Cada card indica o perfil de jogador ideal, e a página de contato recebe pedidos com descrição para facilitar uma recomendação mais certeira.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+</body>
+</html>
