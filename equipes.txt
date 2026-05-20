@@ -1,2 +1,1 @@
-Link do GitHub Pages: substitua pelo link publicado do seu repositorio.
-Sugestao de formato: https://seu-usuario.github.io/nome-do-repositorio/
+Link do GitHub Pages: https://eduardocraveiro.github.io/Projeto-Loja-Gamer/
