@@ -57,9 +57,9 @@ const products = [
 
 const contactInfo = {
   phone: '(11) 4002-2026',
-  email: 'contato@pixelforge.com.br',
-  instagram: '@pixelforge.gg',
-  linkedin: 'Pixel Forge Gamer'
+  email: 'contato@levelupgames.com.br',
+  instagram: '@levelupgames.gg',
+  linkedin: 'Level Up Games'
 };
 
 const formatCurrency = value => value.toLocaleString('pt-BR', {
@@ -158,7 +158,7 @@ function setupContactForm() {
       return;
     }
 
-    message.textContent = `Obrigado, ${name}! Sua mensagem foi enviada para a equipe Pixel Forge.`;
+    message.textContent = `Obrigado, ${name}! Sua mensagem foi enviada para a equipe Level Up Games.`;
     message.className = 'form-message form-message--success';
     form.reset();
   });
@@ -172,8 +172,8 @@ function renderFooter() {
     <div class="footer-grid">
       <div>
         <a class="brand brand--footer" href="${document.body.dataset.page === 'home' ? 'index.html' : '../index.html'}">
-          <span class="brand__mark">PF</span>
-          <span class="brand__text">Pixel Forge</span>
+          <span class="brand__mark">LUG</span>
+          <span class="brand__text">Level Up Games</span>
         </a>
         <p>Loja gamer com curadoria para montar setups competitivos, confortáveis e bonitos.</p>
       </div>
@@ -188,7 +188,7 @@ function renderFooter() {
         <p>${contactInfo.linkedin}</p>
       </div>
     </div>
-    <p class="copyright">© ${new Date().getFullYear()} Pixel Forge. Todos os direitos reservados.</p>
+    <p class="copyright">© ${new Date().getFullYear()} Level Up Games. Todos os direitos reservados.</p>
   `;
 }
 
