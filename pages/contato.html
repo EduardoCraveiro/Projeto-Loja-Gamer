@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Pixel Forge</title>
+  <meta name="description" content="Entre em contato com a Pixel Forge e descreva o setup gamer que voce deseja montar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/estilo.css">
+  <script src="../src/js/script.js" defer></script>
+</head>
+<body data-page="contato">
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Pixel Forge Home">
+      <span class="brand__mark">PF</span>
+      <span class="brand__text">Pixel Forge</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav" aria-label="Menu principal">
+      <a href="../index.html" data-nav="home">Home</a>
+      <a href="portifolio.html" data-nav="portifolio">Portifólio</a>
+      <a href="sobre.html" data-nav="sobre">Sobre</a>
+      <a href="contato.html" data-nav="contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-labelledby="contact-title">
+      <p class="eyebrow">Contato</p>
+      <h1 id="contact-title">Descreva seu setup ideal e receba uma recomendação.</h1>
+      <p>Informe nome, email e o que procura. O formulário valida os dados e confirma o envio na própria página.</p>
+    </section>
+
+    <section class="contact-layout" aria-label="Formulario de contato">
+      <form class="contact-form" data-contact-form novalidate>
+        <label for="name">Nome</label>
+        <input id="name" name="name" type="text" placeholder="Seu nome completo" required minlength="3">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="voce@email.com" required>
+
+        <label for="description">Descrição</label>
+        <textarea id="description" name="description" rows="7" placeholder="Conte qual jogo voce joga, seu orçamento e o que deseja melhorar." required minlength="15"></textarea>
+
+        <button class="button button--primary" type="submit">Enviar</button>
+        <p class="form-message" data-form-message role="status"></p>
+      </form>
+
+      <aside class="contact-panel">
+        <h2>Atendimento Pixel Forge</h2>
+        <p>Quanto mais detalhes voce enviar, mais certeira fica a indicação de combo, periférico ou upgrade.</p>
+        <ul>
+          <li>Orçamentos para setups completos</li>
+          <li>Indicação por estilo de jogo</li>
+          <li>Promoções semanais</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+</body>
+</html>
