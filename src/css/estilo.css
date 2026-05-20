@@ -67,11 +67,11 @@ a {
 }
 
 .brand__logo {
-  width: 52px;
-  height: 52px;
+  width: 42px;
+  height: 42px;
   border: 2px solid rgba(18, 199, 180, 0.26);
   border-radius: 8px;
-  background: var(--ink);
+  background: #fff;
   object-fit: cover;
   object-position: center;
 }
