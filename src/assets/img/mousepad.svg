@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title">
+  <title id="title">Mousepad gamer extra grande</title>
+  <rect width="640" height="400" fill="#eef6f7"/>
+  <rect x="78" y="110" width="484" height="180" rx="28" fill="#172033"/>
+  <rect x="108" y="140" width="424" height="120" rx="20" fill="#243148"/>
+  <path d="M140 226c67-67 145-20 211-86 42 60 108 47 149 95" fill="none" stroke="#12c7b4" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="184" cy="177" r="20" fill="#ff4f7b"/>
+  <circle cx="454" cy="184" r="20" fill="#ffbe3d"/>
+</svg>
