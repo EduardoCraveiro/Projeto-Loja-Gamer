@@ -172,7 +172,7 @@ function renderFooter() {
     <div class="footer-grid">
       <div>
         <a class="brand brand--footer" href="${document.body.dataset.page === 'home' ? 'index.html' : '../index.html'}">
-          <span class="brand__mark">LUG</span>
+          <img class="brand__logo" src="${getAssetPrefix()}logo-level-up-games.png" alt="">
           <span class="brand__text">Level Up Games</span>
         </a>
         <p>Loja gamer com curadoria para montar setups competitivos, confortáveis e bonitos.</p>

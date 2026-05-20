@@ -66,6 +66,16 @@ a {
   font-size: 0.9rem;
 }
 
+.brand__logo {
+  width: 52px;
+  height: 52px;
+  border: 2px solid rgba(18, 199, 180, 0.26);
+  border-radius: 8px;
+  background: var(--ink);
+  object-fit: cover;
+  object-position: center;
+}
+
 .brand__text {
   font-size: 1.05rem;
 }
@@ -470,6 +480,10 @@ h3 {
 .brand--footer .brand__mark {
   background: var(--accent);
   color: var(--ink);
+}
+
+.brand--footer .brand__logo {
+  border-color: rgba(18, 199, 180, 0.52);
 }
 
 .site-footer p,
