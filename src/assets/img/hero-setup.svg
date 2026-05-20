@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc">
+  <title id="title">Setup gamer com monitor, teclado e controle</title>
+  <desc id="desc">Ilustracao colorida de uma mesa gamer com equipamentos iluminados.</desc>
+  <rect width="900" height="640" rx="36" fill="#172033"/>
+  <rect x="86" y="424" width="728" height="58" rx="20" fill="#243148"/>
+  <rect x="135" y="113" width="510" height="292" rx="28" fill="#0f1421"/>
+  <rect x="166" y="146" width="448" height="226" rx="20" fill="#22304a"/>
+  <path d="M166 324h448v28a20 20 0 0 1-20 20H186a20 20 0 0 1-20-20z" fill="#101522"/>
+  <circle cx="390" cy="348" r="10" fill="#12c7b4"/>
+  <path d="M300 195h190l50 70-88 70H262l-52-70z" fill="#12c7b4" opacity=".88"/>
+  <path d="M285 220h156l34 45-55 45H266l-33-45z" fill="#ff4f7b"/>
+  <path d="M346 405h88l18 62H328z" fill="#0f1421"/>
+  <rect x="262" y="458" width="258" height="30" rx="15" fill="#0f1421"/>
+  <rect x="169" y="496" width="346" height="56" rx="16" fill="#0f1421"/>
+  <g fill="#12c7b4">
+    <rect x="196" y="514" width="32" height="12" rx="4"/>
+    <rect x="238" y="514" width="32" height="12" rx="4"/>
+    <rect x="280" y="514" width="32" height="12" rx="4"/>
+    <rect x="322" y="514" width="32" height="12" rx="4"/>
+    <rect x="364" y="514" width="32" height="12" rx="4"/>
+    <rect x="406" y="514" width="74" height="12" rx="4"/>
+  </g>
+  <path d="M680 424c51 0 91 34 91 77 0 35-27 62-61 62-19 0-31-9-41-22-9 13-22 22-40 22-35 0-62-27-62-62 0-43 41-77 91-77z" fill="#ff4f7b"/>
+  <circle cx="624" cy="499" r="13" fill="#fff"/>
+  <circle cx="716" cy="500" r="13" fill="#fff"/>
+  <rect x="654" y="488" width="34" height="14" rx="7" fill="#101522"/>
+  <path d="M771 179c0-46 37-83 83-83v166c-46 0-83-37-83-83z" fill="#12c7b4"/>
+  <rect x="729" y="151" width="74" height="57" rx="18" fill="#ffbe3d"/>
+  <circle cx="760" cy="179" r="12" fill="#172033"/>
+</svg>
