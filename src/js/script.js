@@ -1,57 +1,66 @@
+const categories = [
+  { name: 'Hardware', detail: 'placas, memória e armazenamento', icon: '⚙' },
+  { name: 'Periféricos', detail: 'teclados, mouses e headsets', icon: '⌨' },
+  { name: 'Computadores', detail: 'máquinas prontas para jogar', icon: '▣' },
+  { name: 'Monitores', detail: 'alta taxa e baixa latência', icon: '▤' },
+  { name: 'Cadeiras gamer', detail: 'conforto para longas sessões', icon: '◈' },
+  { name: 'Acessórios', detail: 'mousepads, suportes e luzes', icon: '✦' }
+];
+
 const products = [
   {
-    name: 'Teclado Nebula TKL',
-    category: 'Periférico',
-    price: 329.9,
-    promo: 279.9,
-    image: 'keyboard.svg',
-    tag: 'Switch red',
-    description: 'Formato compacto, resposta rápida e iluminação configurável para setups menores.'
+    name: 'Teclado Neon Strike',
+    category: 'Periféricos',
+    price: 429.9,
+    promo: 329.9,
+    image: 'produto-teclado.png',
+    tag: 'RGB mecânico',
+    description: 'Teclado gamer iluminado, switches mecânicos e visual premium para setups de alta performance.'
   },
   {
     name: 'Headset Rift 7.1',
-    category: 'Áudio',
+    category: 'Periféricos',
     price: 449.9,
     promo: 379.9,
-    image: 'headset.svg',
-    tag: 'Som imersivo',
-    description: 'Microfone destacável e áudio espacial para ouvir passos, efeitos e chamadas com clareza.'
+    image: 'produto-headset.png',
+    tag: 'Som 7.1',
+    description: 'Headset com microfone, iluminação neon e áudio imersivo para partidas e chamadas.'
   },
   {
     name: 'Mouse Pulse Pro',
-    category: 'Precisão',
+    category: 'Periféricos',
     price: 259.9,
     promo: 199.9,
-    image: 'mouse.svg',
+    image: 'produto-mouse.png',
     tag: '16K DPI',
-    description: 'Sensor preciso, peso reduzido e pegada confortável para partidas competitivas.'
+    description: 'Mouse gamer com iluminação RGB, pegada confortável e precisão para jogos competitivos.'
   },
   {
-    name: 'Controle Orion X',
-    category: 'Console',
-    price: 389.9,
-    promo: 339.9,
-    image: 'controller.svg',
-    tag: 'Wireless',
-    description: 'Controle sem fio com gatilhos responsivos para corrida, aventura e jogos de luta.'
+    name: 'PC Gamer RTX Forge',
+    category: 'Computadores',
+    price: 6999.9,
+    promo: 5899.9,
+    image: 'produto-pc-gamer.png',
+    tag: 'RTX ready',
+    description: 'Desktop gamer com gabinete RGB, refrigeração reforçada e foco em alto desempenho.'
   },
   {
-    name: 'Combo Stream Start',
-    category: 'Combo',
-    price: 899.9,
-    promo: 749.9,
-    image: 'stream-combo.svg',
-    tag: 'Creator',
-    description: 'Kit com webcam, microfone e luz de mesa para começar transmissões com imagem limpa.'
+    name: 'Monitor Quantum 27',
+    category: 'Monitores',
+    price: 1899.9,
+    promo: 1499.9,
+    image: 'produto-monitor.png',
+    tag: '165Hz QHD',
+    description: 'Monitor gamer curvo com alta taxa de atualização, HDR e visual neon futurista.'
   },
   {
-    name: 'Mousepad Arena XL',
-    category: 'Acessório',
-    price: 149.9,
-    promo: 99.9,
-    image: 'mousepad.svg',
-    tag: 'Extra large',
-    description: 'Superfície ampla, base antiderrapante e costura reforçada para movimentos longos.'
+    name: 'Cadeira Victory Pro',
+    category: 'Cadeiras gamer',
+    price: 1399.9,
+    promo: 1099.9,
+    image: 'produto-cadeira.png',
+    tag: 'Ergonômica',
+    description: 'Cadeira gamer com apoio ajustável, materiais premium e estilo Level Up Games.'
   }
 ];
 
@@ -59,7 +68,8 @@ const contactInfo = {
   phone: '(11) 4002-2026',
   email: 'contato@levelupgames.com.br',
   instagram: '@levelupgames.gg',
-  linkedin: 'Level Up Games'
+  linkedin: 'Level Up Games',
+  copyright: 'Level Up Games'
 };
 
 const formatCurrency = value => value.toLocaleString('pt-BR', {
@@ -92,16 +102,39 @@ function markCurrentPage() {
   });
 }
 
+function renderCategories() {
+  document.querySelectorAll('[data-categories]').forEach(container => {
+    categories.forEach(category => {
+      const article = document.createElement('article');
+      article.className = 'category-card';
+      article.innerHTML = `
+        <span aria-hidden="true">${category.icon}</span>
+        <h3>${category.name}</h3>
+        <p>${category.detail}</p>
+      `;
+      container.appendChild(article);
+    });
+  });
+}
+
 function createProductCard(product) {
+  const economy = product.price - product.promo;
   const article = document.createElement('article');
   article.className = 'product-card';
   article.innerHTML = `
     <img src="${getAssetPrefix()}${product.image}" alt="Imagem do produto ${product.name}">
     <div class="product-card__body">
-      <span>${product.tag}</span>
+      <div class="product-card__meta">
+        <span>${product.tag}</span>
+        <small>${product.category}</small>
+      </div>
       <h3>${product.name}</h3>
       <p>${product.description}</p>
-      <strong>${formatCurrency(product.promo)}</strong>
+      <div class="price-box">
+        <del>${formatCurrency(product.price)}</del>
+        <strong>${formatCurrency(product.promo)}</strong>
+        <em>Economize ${formatCurrency(economy)}</em>
+      </div>
     </div>
   `;
   return article;
@@ -172,10 +205,10 @@ function renderFooter() {
     <div class="footer-grid">
       <div>
         <a class="brand brand--footer" href="${document.body.dataset.page === 'home' ? 'index.html' : '../index.html'}">
-          <img class="brand__logo" src="${getAssetPrefix()}logo-level-up-games-white.png" alt="">
+          <img class="brand__logo" src="${getAssetPrefix()}logo-level-up-games-neon.png" alt="">
           <span class="brand__text">Level Up Games</span>
         </a>
-        <p>Loja gamer com curadoria para montar setups competitivos, confortáveis e bonitos.</p>
+        <p>Loja gamer fictícia com curadoria de hardware, periféricos, computadores, monitores, cadeiras e acessórios.</p>
       </div>
       <address>
         <strong>Contato</strong>
@@ -188,12 +221,13 @@ function renderFooter() {
         <p>${contactInfo.linkedin}</p>
       </div>
     </div>
-    <p class="copyright">© ${new Date().getFullYear()} Level Up Games. Todos os direitos reservados.</p>
+    <p class="copyright">© ${new Date().getFullYear()} ${contactInfo.copyright}. Todos os direitos reservados.</p>
   `;
 }
 
 setupMenu();
 markCurrentPage();
+renderCategories();
 renderProducts();
 renderPromoTable();
 setupContactForm();

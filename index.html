@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Level Up Games | Loja Gamer</title>
-  <meta name="description" content="Loja gamer com setups, periféricos, promoções e atendimento para jogadores exigentes.">
+  <meta name="description" content="Level Up Games, loja gamer ficticia com hardware, perifericos, computadores, monitores, cadeiras gamer e acessorios.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/css/estilo.css">
   <script src="src/js/script.js" defer></script>
 </head>
 <body data-page="home">
+  <div class="top-strip">Semana Level Up: combos gamer com descontos progressivos e frete especial para setups completos.</div>
+
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Level Up Games Home">
-      <img class="brand__logo" src="src/assets/img/logo-level-up-games-white.png" alt="">
+      <img class="brand__logo" src="src/assets/img/logo-level-up-games-neon.png" alt="">
       <span class="brand__text">Level Up Games</span>
     </a>
 
@@ -36,54 +38,70 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero__content">
         <p class="eyebrow">Loja Gamer</p>
-        <h1 id="hero-title">Upgrade completo para jogar com performance e estilo.</h1>
-        <p class="hero__text">A Level Up Games reúne periféricos, combos e acessórios escolhidos para quem quer montar um setup competitivo sem perder tempo comparando dezenas de abas.</p>
+        <h1 id="hero-title">Monte seu setup gamer com ofertas de tecnologia e performance.</h1>
+        <p class="hero__text">A Level Up Games é uma loja fictícia inspirada no universo de e-commerce gamer: hardware, periféricos, computadores, monitores, cadeiras e acessórios em uma vitrine dinâmica e responsiva.</p>
         <div class="hero__actions">
-          <a class="button button--primary" href="pages/portifolio.html">Ver produtos</a>
-          <a class="button button--ghost" href="pages/contato.html">Pedir orçamento</a>
+          <a class="button button--primary" href="pages/portifolio.html">Ver promoções</a>
+          <a class="button button--ghost" href="pages/contato.html">Montar setup</a>
         </div>
       </div>
 
-      <div class="hero__media" aria-hidden="true">
-        <img src="src/assets/img/hero-setup.svg" alt="">
+      <div class="hero__deal" aria-label="Oferta em destaque">
+        <span class="deal-badge">Oferta relâmpago</span>
+        <img src="src/assets/img/hero-elevate-game.png" alt="Banner gamer com setup Level Up Games.">
+        <div class="deal-card">
+          <small>Combo competitivo</small>
+          <strong>PC + periféricos + monitor</strong>
+          <span>até 25% off</span>
+        </div>
       </div>
     </section>
 
-    <section class="section section--compact" aria-labelledby="stats-title">
+    <section class="section section--tight" aria-labelledby="category-title">
       <div class="section__intro">
-        <p class="eyebrow">Atendimento gamer</p>
-        <h2 id="stats-title">Escolhas rápidas para diferentes estilos de jogo.</h2>
+        <p class="eyebrow">Categorias</p>
+        <h2 id="category-title">Tudo para evoluir sua estação gamer.</h2>
       </div>
-      <div class="stats-grid">
-        <article class="stat">
-          <strong>24h</strong>
-          <span>resposta em pedidos online</span>
-        </article>
-        <article class="stat">
-          <strong>12x</strong>
-          <span>parcelamento em combos selecionados</span>
-        </article>
-        <article class="stat">
-          <strong>30+</strong>
-          <span>itens avaliados para setups</span>
-        </article>
+      <div class="category-grid" data-categories></div>
+    </section>
+
+    <section class="promo-band" aria-labelledby="promo-title">
+      <div>
+        <p class="eyebrow">Campanha ativa</p>
+        <h2 id="promo-title">Festival de upgrades com combos selecionados.</h2>
       </div>
+      <img class="promo-band__image" src="src/assets/img/banner-semana-level-up.png" alt="Banner Semana Level Up com desconto em periféricos gamers.">
+      <a class="button button--primary" href="pages/portifolio.html">Comparar preços</a>
     </section>
 
     <section class="section" aria-labelledby="featured-title">
-      <div class="section__intro">
-        <p class="eyebrow">Destaques</p>
-        <h2 id="featured-title">Produtos pensados para melhorar mira, som e resposta.</h2>
+      <div class="section__intro section__intro--row">
+        <div>
+          <p class="eyebrow">Destaques</p>
+          <h2 id="featured-title">Produtos em alta na loja.</h2>
+        </div>
+        <a class="text-link" href="pages/portifolio.html">Abrir portifólio</a>
       </div>
       <div class="product-grid" data-products-preview></div>
     </section>
 
-    <section class="section split-band" aria-labelledby="experience-title">
-      <div>
-        <p class="eyebrow">Experiência</p>
-        <h2 id="experience-title">Além de vender, a loja ajuda a montar o setup.</h2>
-      </div>
-      <p>A proposta da Level Up Games é unir vitrine, promoções e orientação. Cada card indica o perfil de jogador ideal, e a página de contato recebe pedidos com descrição para facilitar uma recomendação mais certeira.</p>
+    <section class="feature-strip" aria-label="Benefícios da loja">
+      <article>
+        <strong>12x</strong>
+        <span>parcelamento em combos</span>
+      </article>
+      <article>
+        <strong>24h</strong>
+        <span>resposta em orçamentos</span>
+      </article>
+      <article>
+        <strong>30+</strong>
+        <span>itens avaliados</span>
+      </article>
+      <article>
+        <strong>100%</strong>
+        <span>projeto responsivo</span>
+      </article>
     </section>
   </main>
 

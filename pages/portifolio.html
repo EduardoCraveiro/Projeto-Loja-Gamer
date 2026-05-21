@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifólio | Level Up Games</title>
-  <meta name="description" content="Cards de produtos, combos e tabela de preços promocionais da Level Up Games.">
+  <meta name="description" content="Portifólio da Level Up Games com cards de produtos gamer e tabela de preços promocionais.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../src/css/estilo.css">
   <script src="../src/js/script.js" defer></script>
 </head>
 <body data-page="portifolio">
+  <div class="top-strip">Portifólio Level Up: cards, preços, economia e promoções organizadas por categoria.</div>
+
   <header class="site-header">
     <a class="brand" href="../index.html" aria-label="Level Up Games Home">
-      <img class="brand__logo" src="../src/assets/img/logo-level-up-games-white.png" alt="">
+      <img class="brand__logo" src="../src/assets/img/logo-level-up-games-neon.png" alt="">
       <span class="brand__text">Level Up Games</span>
     </a>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
@@ -33,14 +35,22 @@
   <main>
     <section class="page-hero" aria-labelledby="portfolio-title">
       <p class="eyebrow">Portifólio</p>
-      <h1 id="portfolio-title">Cards, combos e promoções da loja gamer.</h1>
-      <p>Confira produtos organizados por objetivo: precisão, imersão, velocidade e conforto para longas partidas.</p>
+      <h1 id="portfolio-title">Cards de produtos, combos e tabela de preços.</h1>
+      <p>Produtos fictícios organizados como uma vitrine de tecnologia gamer, com foco em hardware, periféricos, computadores, monitores, cadeiras e acessórios.</p>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="portfolio-category-title">
+      <div class="section__intro">
+        <p class="eyebrow">Departamentos</p>
+        <h2 id="portfolio-category-title">Categorias da loja gamer.</h2>
+      </div>
+      <div class="category-grid" data-categories></div>
     </section>
 
     <section class="section" aria-labelledby="cards-title">
       <div class="section__intro">
         <p class="eyebrow">Produtos</p>
-        <h2 id="cards-title">Cards de produtos</h2>
+        <h2 id="cards-title">Cards do portifólio</h2>
       </div>
       <div class="product-grid" data-products-list></div>
     </section>
@@ -48,11 +58,11 @@
     <section class="section" aria-labelledby="table-title">
       <div class="section__intro">
         <p class="eyebrow">Promoções</p>
-        <h2 id="table-title">Tabela de preços</h2>
+        <h2 id="table-title">Tabela de preços promocionais</h2>
       </div>
       <div class="table-wrap">
         <table class="price-table">
-          <caption>Ofertas especiais da semana</caption>
+          <caption>Ofertas especiais da semana Level Up Games</caption>
           <thead>
             <tr>
               <th>Produto</th>
